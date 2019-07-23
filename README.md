@@ -2,6 +2,12 @@ Proyecto de React usando Hooks para los servicios
 
 ## Folder structure
 
+### `/dyson`
+Contiene nuestra configuración de (dyson)[https://github.com/webpro/dyson] para poder simular nuestras peticiones http.
+
+Dentro encontramos la carpeta `/methods` con las carpetas `/get` y `/post` con ficheros para cada uno de nuestros endpoints.
+También podremos encontrar la carpeta `/data` con nuestros ficheros `json` con datos para poder exponer desde nuestros endpoints.  
+
 ### `/models`
 Contiene nuestras entidades con 2 métodos estáticos `fromJSON` y `toJSON que serán los únicos métodos que podremos usar para crear o serializar nuestra entidad, ya que nuestro `constructor` es privado.
 
