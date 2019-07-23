@@ -4,7 +4,6 @@ import { useCreatePlayer } from "./services/PlayerService";
 import { useCreateMatch } from "./services/MatchService";
 import { useCreateTournament } from "./services/TournamentService";
 
-import {matchData, player1Data, player2Data, tournamentData} from "./data/fakeDB";
 
 const App: React.FC = () => {
     const player1 = useCreatePlayer(player1Data);

@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "playersId": [
+    1,
+    2
+  ],
+  "tournamentId": "1",
+  "phaseNumber": "1"
+}
