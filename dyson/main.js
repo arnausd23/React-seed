@@ -2,5 +2,5 @@ var dyson = require('dyson');
 
 dyson.bootstrap({
     configDir: __dirname + '/methods',
-    port: 8181
+    port: 8182
 });

@@ -1,9 +1,31 @@
-Proyecto de React usando Hooks para los servicios
+# React app project
+Proyecto de React usando Hooks para los servicios y Redux para state management.
+
+## Development setup
+First install all the dependencies
+``` bash
+npm install
+```
+
+To serve the project to run in development mode
+``` bash
+npm run start
+```
+
+To build the project
+``` bash
+npm run build
+```
+
+To run the Dyson fake server to retrieve our data from the different endpoints
+``` bash
+npm run mocks
+```
 
 ## Folder structure
 
 ### `/dyson`
-Contiene nuestra configuración de (dyson)[https://github.com/webpro/dyson] para poder simular nuestras peticiones http.
+Contiene nuestra configuración de [dyson](https://github.com/webpro/dyson) para poder simular nuestras peticiones http.
 
 Dentro encontramos la carpeta `/methods` con las carpetas `/get` y `/post` con ficheros para cada uno de nuestros endpoints.
 También podremos encontrar la carpeta `/data` con nuestros ficheros `json` con datos para poder exponer desde nuestros endpoints.  
@@ -15,3 +37,36 @@ Haciendo esto nos aseguramos de encapsular la lógica de creación en este fiche
 
 ### `/services`
 Contiene nuestros servicios compuestos principalmente por `Hooks`. Agruparemos los diferentes Hooks según el dominio al que pertenezcan por lo que, por ejemplo todos nuestros Hooks relaionados con la entidad `Player` estarán dentro de `PlayerService`.
+
+## Done
+
+- [x] Fake server
+- [x] Domain entities
+- [x] Domain services
+
+## ToDo
+
+- [ ] I18n
+- [ ] Redux
+- [ ] Theming
+- [ ] Http Service layer
+- [ ] Http gateway
+- [ ] Testing example
+- [ ] Alert/Toast
+- [ ] Fonts
+- [ ] Image/assets example
+- [ ] Library example
+
+## Authors
+
+* **Arnau Silvestre** - *Initial work*
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* [Apiumhub](https://apiumhub.com/)
+* [parronator](https://github.com/parronator/)

@@ -6,6 +6,8 @@ module.exports = {
 
         var examples = [
             '/player',
+            '/match',
+            '/tournament',
         ];
 
         html += '<ul>' + examples.map(function(example) {
