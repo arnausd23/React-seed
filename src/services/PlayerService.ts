@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 
 import {IPlayer, Player} from "../models/Player";
-import {HttpService} from "./HttpService";
+import {HttpGateway, HttpService} from "./HttpService";
 
 export function useCreatePlayer(data: IPlayer) {
     const [player, setPlayer] = useState<Player | null>(null);
@@ -18,7 +18,7 @@ export function useGetPlayer() {
     const [player, getPlayer] = useState<Player | null>(null);
 
     useEffect(() => {
-        const http = new HttpService();
+        const http: HttpGateway = new HttpService();
         const player: Promise<any> = http.get('/player');
     });
     return player
