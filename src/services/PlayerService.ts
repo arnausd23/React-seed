@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect} from "react";
 
 import {IPlayer, Player} from "../models/Player";
 import {HttpService} from "./HttpService";
@@ -18,7 +18,6 @@ export function useGetPlayer() {
     const [player, getPlayer] = useState<Player | null>(null);
 
     useEffect(() => {
-        const player = HttpService.get('/player');
     });
     return player
 }

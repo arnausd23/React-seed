@@ -2,10 +2,8 @@ import React from 'react';
 
 import { useCreatePlayer, useGetPlayer } from "./services/PlayerService";
 
-
 const App: React.FC = () => {
     const player1 = useGetPlayer();
-
 
     return (
         <div>

@@ -1,13 +1,14 @@
+export interface IHttp {
+    get(url: string): any;
+    post(url: string, body: any): any;
+}
+
 const BASE_URL: string = 'http://localhost:8183';
 
-export class HttpService {
-
-    static get(url: string): any {
-        fetch(`${BASE_URL}${url}`)
-            .then(response => response.json())
+export class HttpService implements IHttp {
+    public get(url: string): any {
     }
 
-    static post(url: string, body: any): any {
-
+    public post(url: string, body: any): any {
     }
 }
