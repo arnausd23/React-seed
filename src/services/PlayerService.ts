@@ -18,6 +18,8 @@ export function useGetPlayer() {
     const [player, getPlayer] = useState<Player | null>(null);
 
     useEffect(() => {
+        const http = new HttpService();
+        const player: Promise<any> = http.get('/player');
     });
     return player
 }
