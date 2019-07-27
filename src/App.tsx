@@ -1,14 +1,12 @@
 import React from 'react';
 
-import { useCreatePlayer, useGetPlayer } from "./services/PlayerService";
+
+import PlayerContainer from "./containers/PlayerContainer";
 
 const App: React.FC = () => {
-    const player1 = useGetPlayer();
-
     return (
         <div>
-            Test
-            { player1 && Object.keys(player1).map((key: string) => <div key={key}>{key} : { player1[key] }</div>) }
+            <PlayerContainer/>
         </div>
     );
 };

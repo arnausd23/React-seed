@@ -43,19 +43,19 @@ Contiene nuestros servicios compuestos principalmente por `Hooks`. Agruparemos l
 - [x] Fake server
 - [x] Domain entities
 - [x] Domain services
+- [x] Http gateway
+- [x] Http Service layer
+- [x] Basic Redux Implementation
 
 ## ToDo
 
-- [ ] I18n
-- [ ] Redux
-- [ ] Theming
-- [ ] Http Service layer
-- [ ] Http gateway
-- [ ] Testing example
+- [ ] Advanced Redux Implementation (sagas, selectors)
 - [ ] Alert/Toast
+- [ ] I18n
 - [ ] Fonts
 - [ ] Image/assets example
-- [ ] Library example
+- [ ] Theming
+- [ ] Testing examples
 
 ## Authors
 
