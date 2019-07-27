@@ -1,5 +1,5 @@
 // @ts-ignore
-import {HttpService} from "./HttpService";
+import {AxiosHttpService} from "./AxiosHttpService";
 
 interface IServiceLocator {
     registerSingleton(instance: any): any
@@ -25,6 +25,6 @@ class GetIt implements IServiceLocator {
 function test() {
     const getIt: any = new GetIt();
 
-    getIt.registerSingleton(new HttpService());
-    getIt.get(new HttpService());
+    getIt.registerSingleton(new AxiosHttpService());
+    getIt.get(new AxiosHttpService());
 }

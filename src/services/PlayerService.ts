@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 
 import {IPlayer, Player} from "../models/Player";
-import {HttpService} from "./HttpService";
+import {AxiosHttpService} from "./AxiosHttpService";
 
 export function useCreatePlayer(data: IPlayer) {
     const [player, setPlayer] = useState<Player | null>(null);
@@ -18,8 +18,7 @@ export function useGetPlayer() {
     const [player, getPlayer] = useState<Player | null>(null);
 
     useEffect(() => {
-        const http = new HttpService();
-        const player: Promise<any> = http.get('/player');
-    });
+        AxiosHttpService.get('/player').then(player => getPlayer(player));
+    }, [true]);
     return player
 }
