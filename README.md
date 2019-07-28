@@ -47,15 +47,16 @@ Contiene nuestros servicios compuestos principalmente por `Hooks`. Agruparemos l
 - [x] Http Service layer
 - [x] Basic Redux Implementation
 - [x] Alert/Toast [react-tostify](https://github.com/fkhadra/react-toastify)
+- [x] Advanced Redux Implementation (sagas, selectors)
 
 ## ToDo
 
-- [ ] Advanced Redux Implementation (sagas, selectors)
 - [ ] I18n
 - [ ] Fonts
 - [ ] Image/assets example
 - [ ] Theming
 - [ ] Testing examples
+- [ ] ~~Advanced Redux Implementation (sagas, selectors)~~ **needs revision**
 - [ ] ~~Customize toast~~ **needs revision**
 
 ## Authors

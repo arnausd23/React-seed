@@ -3,7 +3,7 @@ import {useGetPlayer} from "../services/PlayerService";
 
 
 export const PlayerComponent = (props) => {
-    //console.log(props.player.players);
+    console.log(props.players);
     const player1 = useGetPlayer();
 
     return (

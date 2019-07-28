@@ -4,11 +4,12 @@ import {Player} from "../models/Player";
 import {addPlayer} from "../store/actions/actions";
 
 import {PlayerComponent} from "../components/PlayerComponent";
+import {getPlayers} from "../store/selectors/selector";
 
 
 const mapStateToProps = state => {
     return {
-        player: state.player
+        players: getPlayers(state),
     }
 };
 

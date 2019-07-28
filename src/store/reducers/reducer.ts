@@ -1,7 +1,7 @@
 import {ADD_PLAYER} from "../actions/actions";
 import {Player} from "../../models/Player";
 
-interface IInitialState {
+export interface IInitialState {
     players: Player[];
 }
 
