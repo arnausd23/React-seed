@@ -13,8 +13,8 @@ export class CustomToast extends React.Component {
         toast.configure({
             hideProgressBar: true,
         });
-        this.openToast('success');
-        this.openToast('error');
+        //this.openToast('success');
+        //this.openToast('error');
     }
 
     openToast(type: toastTypeOptions, component?: React.Component) {
