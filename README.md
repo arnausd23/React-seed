@@ -49,10 +49,12 @@ Contiene nuestros servicios compuestos principalmente por `Hooks`. Agruparemos l
 - [x] Alert/Toast [react-tostify](https://github.com/fkhadra/react-toastify)
 - [x] Advanced Redux Implementation (sagas, selectors)
 - [x] I18n
+- [x] Fonts
 
 ## ToDo
-
-- [ ] Fonts
+- [ ] Add facade pattern for connecting to store
+- [ ] Rethink folder structure
+---
 - [ ] Image/assets example
 - [ ] Theming
 - [ ] Testing examples
