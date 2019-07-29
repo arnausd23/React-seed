@@ -1,14 +1,14 @@
 import React from 'react';
 import {useGetPlayer} from "../services/PlayerService";
+import {useTranslation} from "react-i18next";
 
 
 export const PlayerComponent = (props) => {
-    console.log(props.players);
+    const [ t, i18n ] = useTranslation();
     const player1 = useGetPlayer();
-
     return (
         <>
-            <h1 onClick={() => props.onPlayerAdd(player1)}>CLICK TO DISPATCH</h1>
+            <h1 onClick={() => props.onPlayerAdd(player1)}>{t('click_to_dispatch')}</h1>
             <br/>
             <br/>
             <br/>

@@ -1,16 +1,37 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { Provider } from 'react-redux'
+import {Provider} from 'react-redux'
 import {store} from "./store";
 
+import i18n from 'i18next';
+import {initReactI18next} from "react-i18next";
+
+i18n
+    .use(initReactI18next)
+    .init({
+        debug: true,
+        resources: {
+            es: {
+                translation: require('./translations/es.json')
+            }
+        },
+        lng: 'es',
+        fallbackLng: 'es',
+        interpolation: {
+            escapeValue: false
+        }
+    });
+
 ReactDOM.render(
-<Provider store={store}>
-        <App/>
-    </Provider>,
+    <Suspense fallback="loading">
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </Suspense>,
     document.getElementById('root')
 );
 
