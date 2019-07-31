@@ -50,6 +50,7 @@ Contiene nuestros servicios compuestos principalmente por `Hooks`. Agruparemos l
 - [x] Advanced Redux Implementation (sagas, selectors)
 - [x] I18n
 - [x] Fonts
+- [x] React router
 
 ## ToDo
 - [ ] Add facade pattern for connecting to store
@@ -58,7 +59,8 @@ Contiene nuestros servicios compuestos principalmente por `Hooks`. Agruparemos l
 - [ ] Image/assets example
 - [ ] Theming
 - [ ] Testing examples
-- [ ] ~~I18n~~  **needs revision**
+- [ ] ~~React router~~ **needs revision**
+- [ ] ~~I18n~~ **needs revision**
 - [ ] ~~Advanced Redux Implementation (sagas, selectors)~~ **needs revision**
 - [ ] ~~Customize toast~~ **needs revision**
 

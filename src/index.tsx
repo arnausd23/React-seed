@@ -10,6 +10,7 @@ import {store} from "./store";
 
 import i18n from 'i18next';
 import {initReactI18next} from "react-i18next";
+import AppRouter from "./router/router";
 
 i18n
     .use(initReactI18next)
@@ -30,7 +31,8 @@ i18n
 ReactDOM.render(
     <Suspense fallback="loading">
         <Provider store={store}>
-            <App/>
+            {/*<App/>*/}
+            <AppRouter/>
         </Provider>
     </Suspense>,
     document.getElementById('root')
