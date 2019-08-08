@@ -6,7 +6,6 @@ import {CustomToast} from "./toast";
 const App: React.FC = () => {
     return (
         <>
-
             <CustomToast/>
             <PlayerContainer/>
         </>

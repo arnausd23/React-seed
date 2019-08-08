@@ -9,15 +9,10 @@ export type toastTypeOptions = 'info' | 'success' | 'warning' | 'error' | 'defau
 
 export class CustomToast extends React.Component {
 
-    componentDidMount() {
+   static openToast(type: toastTypeOptions, component?: React.Component) {
         toast.configure({
             hideProgressBar: true,
         });
-        //this.openToast('success');
-        //this.openToast('error');
-    }
-
-    openToast(type: toastTypeOptions, component?: React.Component) {
         toast(<ToastComponent/>, { type, closeButton: false, className: 'customToast', bodyClassName: 'customToast__body'});
     }
 

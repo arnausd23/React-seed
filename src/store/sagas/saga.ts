@@ -1,7 +1,8 @@
-import { takeLatest, put } from 'redux-saga/effects'
+import {put, takeLatest} from 'redux-saga/effects'
 import {AxiosHttpService} from "../../services/AxiosHttpService";
 
 import {ADD_PLAYER} from "../actions/actions";
+import {CustomToast} from "../../toast";
 
 export function* fetchData(action) {
     try {
@@ -12,6 +13,16 @@ export function* fetchData(action) {
     }
 }
 
+export function* fetchDataSuccess() {
+    yield CustomToast.openToast('success');
+}
+
+export function* fetchDataError() {
+    yield CustomToast.openToast('error');
+}
+
 export default function* rootSaga() {
-    yield takeLatest(ADD_PLAYER, fetchData)
+    yield takeLatest(ADD_PLAYER, fetchData);
+    yield takeLatest("FETCH_SUCCEEDED", fetchDataSuccess);
+    yield takeLatest("FETCH_FAILED", fetchDataError);
 }
