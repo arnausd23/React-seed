@@ -3,8 +3,8 @@ import {connect} from 'react-redux'
 import {Player} from "../models/Player";
 import {addPlayer} from "../store/actions/actions";
 
-import {PlayerComponent} from "../components/PlayerComponent";
 import {getPlayers} from "../store/selectors/selector";
+import {PlayerComponent} from "../components";
 
 
 const mapStateToProps = state => {
@@ -21,9 +21,7 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-const PlayerContainer = connect(
+export const PlayerContainer = connect(
     mapStateToProps,
     mapDispatchToProps
 )(PlayerComponent);
-
-export default PlayerContainer;

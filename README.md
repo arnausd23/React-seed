@@ -38,6 +38,16 @@ Haciendo esto nos aseguramos de encapsular la lógica de creación en este fiche
 ### `/services`
 Contiene nuestros servicios compuestos principalmente por `Hooks`. Agruparemos los diferentes Hooks según el dominio al que pertenezcan por lo que, por ejemplo todos nuestros Hooks relaionados con la entidad `Player` estarán dentro de `PlayerService`.
 
+### `/containers`
+Contiene nuestros presenters, componentes encargados de hacer el fetch de datos y distribuirlos a los componentes presentacionales. Estos componentes pueden parsear o filtrar los datos antes de pasarlos a los componentes, a fin de adaptar los datos recibidos a una inerfaz común.
+
+### `/components`
+Contiene nuestros componentes "dumb", que nunca pedirán datos sino que simplemente los recibirán en caso de necesitarlos. Pese a ser componentes dumb contienen la lógica para tratar con los datos recibidos y pueden tener estado interno. 
+
+### [`Redux architecture re-ducks`](https://github.com/alexnm/re-ducks)
+
+
+
 ## Done
 
 - [x] Fake server
@@ -53,7 +63,6 @@ Contiene nuestros servicios compuestos principalmente por `Hooks`. Agruparemos l
 - [x] React router
 
 ## ToDo
-- [ ] Add facade pattern for connecting to store
 - [ ] Rethink folder structure
 ---
 - [ ] Image/assets example
