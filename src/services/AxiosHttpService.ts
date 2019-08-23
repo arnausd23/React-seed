@@ -10,7 +10,4 @@ export class AxiosHttpService implements HttpGateway {
     static get(url: string) {
         return axios.get(`${BASE_URL}${url}`).then(response => response.data);
     }
-
-    static post(url: string, body: any): any {
-    }
 }
