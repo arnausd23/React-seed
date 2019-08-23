@@ -46,6 +46,8 @@
   },
   "devDependencies": {
     "dyson": "^2.0.5",
+    "i18next-scanner": "^2.10.2",
+    "i18next-scanner-typescript": "^1.0.3",
     "jest": "24.7.1",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8",
