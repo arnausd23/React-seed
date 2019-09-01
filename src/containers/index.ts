@@ -1,7 +1,9 @@
 import {PlayerContainer} from "./PlayerContainer";
+import LoginContainer from "./LoginContainer";
 
 export const containers = [
-    PlayerContainer
+    PlayerContainer,
+    LoginContainer
 ];
 
 export * from "./PlayerContainer";
