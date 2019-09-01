@@ -10,6 +10,7 @@ export const PlayerComponent = (props) => {
 
     return (
         <>
+            <img src={process.env.PUBLIC_URL + '/assets/Morty.png'} />
             <button onClick={() => props.onPlayerAdd(player1)}>{t('click_to_dispatch')}</button>
             {props.players.map((player, index) =>
                 <div className="player-container" key={`${player.id}-${index}`}>

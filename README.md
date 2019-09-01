@@ -61,14 +61,15 @@ Contiene nuestros componentes "dumb", que nunca pedirán datos sino que simpleme
 - [x] I18n
 - [x] Fonts
 - [x] React router
+- [x] Roles and private routing
+- [x] React router
+- [x] Image/assets example
 
 ## ToDo
-- [ ] Rethink folder structure
+- [ ] ~~Rethink folder structure~~ Apply FeatureFolder pattern 
 ---
-- [ ] Image/assets example
 - [ ] Theming
 - [ ] Testing examples
-- [ ] ~~React router~~ **needs revision**
 - [ ] ~~I18n~~ **needs revision**
 - [ ] ~~Advanced Redux Implementation (sagas, selectors)~~ **needs revision**
 - [ ] ~~Customize toast~~ **needs revision**
