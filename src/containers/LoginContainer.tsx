@@ -1,5 +1,6 @@
 import React from 'react';
 import {LoginComponent} from "../components/LoginComponent";
+import useSignUpForm from "../services/FromHook";
 
 export interface ILoginFormData {
     userName: string;
@@ -7,10 +8,16 @@ export interface ILoginFormData {
 }
 
 export default LoginContainer => {
-    function handleFormSubmit(data: ILoginFormData) {
-        console.log(data);
-    }
+    const onSignup = (inputs) => {
+        console.log(`User Created!
+         UserName: ${inputs.userName}
+         Password: ${inputs.password}`);
+    };
 
-    return <LoginComponent onSubmit={handleFormSubmit}/>;
+    const initialFormState: ILoginFormData = {
+        userName: '',
+        password: ''
+    };
 
+    return <LoginComponent {...useSignUpForm(initialFormState, onSignup)}/>;
 };

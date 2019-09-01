@@ -1,18 +1,19 @@
 import React from 'react';
 
-export const LoginComponent = ({onSubmit}) => {
+export const LoginComponent = (props) => {
+    const {inputs, handleInputChange, handleSubmit} = props;
 
     return (
-        <form onClick={() => onSubmit({userName: 'arnau', password: '123'})}>
+        <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="userName">User Name: </label>
-                <input type="text" required/>
+                <input name="userName" type="text" onChange={handleInputChange} value={inputs.userName} required/>
             </div>
             <div>
                 <label htmlFor="password">User Password: </label>
-                <input type="password" required/>
+                <input name="password" type="password" onChange={handleInputChange} value={inputs.password} required/>
             </div>
-            <button type={"button"}>Submit</button>
+            <button type={"submit"}>Submit</button>
         </form>
     );
 };
