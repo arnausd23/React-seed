@@ -1,5 +1,5 @@
 import {PlayerContainer} from "./PlayerContainer";
-import LoginContainer from "./LoginContainer";
+import {LoginContainer} from "./LoginContainer";
 
 export const containers = [
     PlayerContainer,
@@ -7,3 +7,4 @@ export const containers = [
 ];
 
 export * from "./PlayerContainer";
+export * from "./LoginContainer";

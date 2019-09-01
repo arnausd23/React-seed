@@ -1,17 +1,16 @@
 import React from 'react';
 import {LoginComponent} from "../components/LoginComponent";
 import useSignUpForm from "../services/FromHook";
+import {AuthenticationService} from "../services/AuthenticationService";
 
 export interface ILoginFormData {
     userName: string;
     password: string;
 }
 
-export default LoginContainer => {
-    const onSignup = (inputs) => {
-        console.log(`User Created!
-         UserName: ${inputs.userName}
-         Password: ${inputs.password}`);
+export const LoginContainer = () => {
+    const onSignup = (inputs: ILoginFormData) => {
+        AuthenticationService.login(inputs);
     };
 
     const initialFormState: ILoginFormData = {

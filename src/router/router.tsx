@@ -1,8 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
-import {PlayerContainer} from "../containers";
+import {LoginContainer, PlayerContainer} from "../containers";
 import {PrivateRoute} from "./PrivateRoute";
-import LoginContainer from "../containers/LoginContainer";
 
 
 function AppRouter() {
