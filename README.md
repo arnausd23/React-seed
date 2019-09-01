@@ -64,9 +64,9 @@ Contiene nuestros componentes "dumb", que nunca pedirán datos sino que simpleme
 - [x] Roles and private routing
 - [x] React router
 - [x] Image/assets example
+- [x] ~~Rethink folder structure~~ Apply FeatureFolder pattern 
 
 ## ToDo
-- [ ] ~~Rethink folder structure~~ Apply FeatureFolder pattern 
 ---
 - [ ] Theming
 - [ ] Testing examples

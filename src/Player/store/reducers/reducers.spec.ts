@@ -1,8 +1,8 @@
 import {Player} from "../../models/Player";
-import {IInitialState} from "../reducers/reducer";
+import {IInitialState} from "./reducer";
 
 import * as fromActions from '../actions/actions';
-import * as fromReducer from '../reducers/reducer';
+import * as fromReducer from './reducer';
 
 describe('Reducer tests' , () => {
     it('[ADD_PLAYER] should add a player to the players array', () => {

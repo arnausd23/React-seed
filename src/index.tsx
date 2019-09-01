@@ -1,15 +1,16 @@
 import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import './styles/fonts.scss';
+import './_shared/styles/fonts.scss';
 import * as serviceWorker from './serviceWorker';
 
 import {Provider} from 'react-redux'
-import {store} from "./store";
+import {store} from "./Player/store";
 
 import i18n from 'i18next';
 import {initReactI18next} from "react-i18next";
-import AppRouter from "./router/router";
+
+import AppRouter from "./_shared/router";
 
 i18n
     .use(initReactI18next)

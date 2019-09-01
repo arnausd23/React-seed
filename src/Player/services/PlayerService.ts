@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 
 import {IPlayer, Player} from "../models/Player";
-import {AxiosHttpService} from "./AxiosHttpService";
+import {AxiosHttpService} from "../../_shared/services/AxiosHttpService";
 
 import {addPlayer} from "../store/actions/actions";
 

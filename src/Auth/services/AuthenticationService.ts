@@ -1,6 +1,6 @@
-import {StorageService} from "./StorageService";
-import {AxiosHttpService, HttpGateway} from "./AxiosHttpService";
 import {ILoginFormData} from "../containers/LoginContainer";
+import {AxiosHttpService, HttpGateway} from "../../_shared/services/AxiosHttpService";
+import {StorageService} from "../../_shared/services/StorageService";
 
 interface ILoginResponse {
     token: string;

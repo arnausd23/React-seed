@@ -1,7 +1,7 @@
 import React from 'react';
 import {LoginComponent} from "../components/LoginComponent";
-import useSignUpForm from "../services/FromHook";
 import {AuthenticationService} from "../services/AuthenticationService";
+import useSignUpForm from "../../_shared/services/FormHook";
 
 export interface ILoginFormData {
     userName: string;
