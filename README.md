@@ -65,10 +65,9 @@ Contiene nuestros componentes "dumb", que nunca pedirán datos sino que simpleme
 - [x] React router
 - [x] Image/assets example
 - [x] ~~Rethink folder structure~~ Apply FeatureFolder pattern 
+- [x] Theming with css var as size variable
 
 ## ToDo
----
-- [ ] Theming
 - [ ] Testing examples
 - [ ] ~~I18n~~ **needs revision**
 - [ ] ~~Advanced Redux Implementation (sagas, selectors)~~ **needs revision**

@@ -10,7 +10,7 @@ import {store} from "./app/Player/store";
 import i18n from 'i18next';
 import {initReactI18next} from "react-i18next";
 
-import AppRouter from "./app/_shared/router";
+import AppRouter from "./app/_shared/router/router";
 
 i18n
     .use(initReactI18next)

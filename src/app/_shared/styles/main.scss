@@ -1,0 +1,15 @@
+$palette: (
+  primary: #009fe3,
+  secondary: #5c7a84,
+  success: green,
+  warning: #ffd747,
+  alert: red,
+);
+
+:root {
+  --main-size: 14px;
+}
+
+html {
+  font-size: var(--main-size);
+}

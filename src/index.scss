@@ -1,7 +1,7 @@
-nav {
-  background-color: #b3d4fc75;
+@import './app/_shared/styles/main.scss';
 
-  li:not(:first-child) {
-      margin-top: 10px;
-  }
+//$test-variable: map_get($palette, 'primary');
+
+* {
+  font-size: 1rem;
 }
