@@ -1,6 +1,6 @@
 import React from "react";
 import {Route} from "react-router-dom";
-import {LoginContainer} from "../containers";
+import {LoginContainer} from "../containers/index";
 
 
 function AuthRouter() {

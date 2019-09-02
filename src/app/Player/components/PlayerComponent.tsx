@@ -5,12 +5,12 @@ import {useTranslation} from "react-i18next";
 import './PlayerComponent.scss';
 
 export const PlayerComponent = (props) => {
-    const [t, i18n] = useTranslation();
+    const [t] = useTranslation();
     const player1 = useGetPlayer();
 
     return (
         <>
-            <img src={process.env.PUBLIC_URL + '/assets/Morty.png'} />
+            <img src={require('../../../assets/images/Morty.png')} alt='Morty' width={'100px'}/>
             <button onClick={() => props.onPlayerAdd(player1)}>{t('click_to_dispatch')}</button>
             {props.players.map((player, index) =>
                 <div className="player-container" key={`${player.id}-${index}`}>
