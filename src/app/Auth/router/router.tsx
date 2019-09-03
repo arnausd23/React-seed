@@ -1,13 +1,13 @@
 import React from "react";
-import {Route, BrowserRouter} from "react-router-dom";
+import {Route, Router} from "react-router-dom";
 import {LoginContainer} from "../containers/index";
 
 
 function AuthRouter() {
     return (
-        <BrowserRouter>
+        <Router>
             <Route path="/login" component={LoginContainer}/>
-        </BrowserRouter>
+        </Router>
     );
 }
 

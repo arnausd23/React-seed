@@ -1,13 +1,13 @@
 import React from "react";
 import {PlayerContainer} from "../containers/index";
-import {Route, BrowserRouter} from "react-router-dom";
+import {Route, Router} from "react-router-dom";
 import {PrivateRoute} from "../../_shared/router/PrivateRoute";
 
 function PlayerRouter() {
     return (
-        <BrowserRouter>
+        <Router>
             <PrivateRoute path="/redux" component={PlayerContainer}/>
-        </BrowserRouter>
+        </Router>
     );
 }
 
