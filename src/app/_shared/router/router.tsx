@@ -7,7 +7,7 @@ import PlayerRouter from "../../Player/router/router";
 const Home = () => (
     <div>
         <h1>Home</h1>
-        <Link to="/">Login</Link>
+        <Link to="/login">Login</Link>
     </div>
 );
 
@@ -16,7 +16,7 @@ function AppRouter() {
         <Router>
             <Route exact path="/" component={Home}/>
             <AuthRouter/>
-            <PlayerRouter />
+            <PlayerRouter/>
         </Router>
     );
 }
