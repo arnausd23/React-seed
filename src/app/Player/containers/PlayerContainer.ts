@@ -4,7 +4,7 @@ import {Player} from "../models/Player";
 import {addPlayer} from "../store/actions/actions";
 
 import {getPlayers} from "../store/selectors/selector";
-import {PlayerComponent} from "../components/index";
+import {PlayerComponent} from "../components";
 
 
 const mapStateToProps = state => {

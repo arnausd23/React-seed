@@ -2,7 +2,7 @@ import {put, takeLatest} from 'redux-saga/effects'
 import {AxiosHttpService} from "../../../_shared/services/AxiosHttpService";
 
 import {ADD_PLAYER} from "../actions/actions";
-import {CustomToast} from "../../../_shared/toast/index";
+import {CustomToast} from "../../../_shared/toast";
 
 export function* fetchData(action) {
     try {

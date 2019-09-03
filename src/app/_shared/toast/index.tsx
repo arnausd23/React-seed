@@ -7,18 +7,13 @@ import {ToastComponent} from "./ToastComponent";
 
 export type toastTypeOptions = 'info' | 'success' | 'warning' | 'error' | 'default';
 
-export class CustomToast extends React.Component {
+export const CustomToast = {
+  openToast,
+};
 
-   static openToast(type: toastTypeOptions, component?: React.Component) {
-        toast.configure({
-            hideProgressBar: true,
-        });
-        toast(<ToastComponent/>, { type, closeButton: false, className: 'customToast', bodyClassName: 'customToast__body'});
-    }
-
-    render() {
-        return (
-            <></>
-        )
-    }
+function openToast(type: toastTypeOptions, title?: string, text?: string) {
+    toast.configure({
+        hideProgressBar: true,
+    });
+    toast(<ToastComponent title={title} text={text}/>, { type, closeButton: false, className: 'customToast', bodyClassName: 'customToast__body'});
 }

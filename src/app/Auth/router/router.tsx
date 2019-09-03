@@ -1,12 +1,13 @@
 import React from "react";
-import {Route, Router} from "react-router-dom";
-import {LoginContainer} from "../containers/index";
+import {Route} from "react-router-dom";
+import {LoginContainer} from "../containers";
+import {Routes} from "../../_shared/router/router";
 
 
 function AuthRouter() {
     return (
         <>
-            <Route path="/login" component={LoginContainer}/>
+            <Route path={Routes.Login} component={LoginContainer}/>
         </>
     );
 }
