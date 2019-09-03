@@ -1,10 +1,15 @@
 import React from "react";
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 import AuthRouter from "../../Auth/router/router";
 import PlayerRouter from "../../Player/router/router";
 
-const Home = () => <h1>Home</h1>;
+const Home = () => (
+    <div>
+        <h1>Home</h1>
+        <Link to="/">Login</Link>
+    </div>
+);
 
 function AppRouter() {
     return (
