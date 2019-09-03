@@ -5,9 +5,9 @@ import {LoginContainer} from "../containers/index";
 
 function AuthRouter() {
     return (
-        <Router>
+        <>
             <Route path="/login" component={LoginContainer}/>
-        </Router>
+        </>
     );
 }
 

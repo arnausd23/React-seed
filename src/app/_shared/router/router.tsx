@@ -7,6 +7,7 @@ import PlayerRouter from "../../Player/router/router";
 const Home = () => (
     <div>
         <h1>Home</h1>
+        <Link to="/login">Login</Link>
     </div>
 );
 
