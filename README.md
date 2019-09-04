@@ -31,7 +31,7 @@ Dentro encontramos la carpeta `/methods` con las carpetas `/get` y `/post` con f
 También podremos encontrar la carpeta `/data` con nuestros ficheros `json` con datos para poder exponer desde nuestros endpoints.  
 
 ### `/models`
-Contiene nuestras entidades con 2 métodos estáticos `fromJSON` y `toJSON que serán los únicos métodos que podremos usar para crear o serializar nuestra entidad, ya que nuestro `constructor` es privado.
+Contiene nuestras entidades con 2 métodos estáticos `fromJSON` y `toJSON` que serán los únicos métodos que podremos usar para crear o serializar nuestra entidad, ya que nuestro `constructor` es privado.
 
 Haciendo esto nos aseguramos de encapsular la lógica de creación en este fichero y al tener el constructor privado nos aseguramos también que toda instancia de esta clase ha pasado nuestas reglas de validación, por lo que nunca será incorrecta.
 
@@ -71,11 +71,10 @@ Contiene nuestros componentes "dumb", que nunca pedirán datos sino que simpleme
 - [ ] Testing examples
 - [ ] ~~I18n~~ **needs revision**
 - [ ] ~~Advanced Redux Implementation (sagas, selectors)~~ **needs revision**
-- [ ] ~~Customize toast~~ **needs revision**
 
 ## Authors
 
-* **Arnau Silvestre** - *Initial work*
+* **Arnau Silvestre**
 
 
 ## License

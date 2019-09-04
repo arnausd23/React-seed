@@ -13,17 +13,12 @@ export class AxiosHttpService implements HttpGateway {
     static get(url: string) {
         return axios.get(`${BASE_URL}${url}`)
             .then(response => response.data)
-            .catch(error => handleErrorResponse(error));
+            .catch(error => {throw new Error(error)});
     }
 
      static post(url: string, data: any) {
         return axios.post(`${BASE_URL}${url}`, data)
             .then(response => response.data)
-            .catch(error => handleErrorResponse(error));
+            .catch(error => {throw new Error(error)});
     }
-}
-
-function handleErrorResponse(error: any) {
-    const {status, statusText} = error.response;
-    CustomToast.openToast('error', status, statusText);
 }
