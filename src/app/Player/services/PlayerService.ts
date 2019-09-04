@@ -22,6 +22,6 @@ export function useGetPlayer() {
 
     useEffect(() => {
         AxiosHttpService.get('/player').then(player => getPlayer(player));
-    }, [true]);
+    });
     return player
 }

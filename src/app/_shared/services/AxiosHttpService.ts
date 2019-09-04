@@ -1,5 +1,3 @@
-import {CustomToast} from "../toast";
-
 const axios = require('axios');
 
 export abstract class HttpGateway {
