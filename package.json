@@ -29,7 +29,9 @@
     "build": "react-scripts build",
     "test": "jest --watchAll",
     "eject": "react-scripts eject",
-    "mocks": "dyson dyson/ 8183"
+    "mocks": "dyson dyson/ 8183",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -c .storybook -o .out"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +49,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-links": "^5.1.11",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "babel-loader": "^8.0.6",
     "dyson": "^2.0.5",
     "i18next-scanner": "^2.10.2",
     "i18next-scanner-typescript": "^1.0.3",

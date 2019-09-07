@@ -2,7 +2,12 @@ import React from "react";
 
 import "./ToastComponentStyles.scss";
 
-export const ToastComponent = (props) => {
+interface Props {
+    title?: string;
+    text?: string;
+}
+
+export const ToastComponent: React.FC<Props> = (props) => {
     return (
         <div className='customToast__body-container'>
             <div className='customToast__ribbon'>{props.title ? props.title : 'Title'}</div>
