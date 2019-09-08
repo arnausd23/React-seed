@@ -11,7 +11,7 @@ import i18n from 'i18next';
 import {initReactI18next} from "react-i18next";
 
 import AppRouter from "./app/_shared/router/router";
-import Home from "./app/_shared/components/Home";
+import {Home} from "./app/_shared/components/Home";
 
 
 i18n

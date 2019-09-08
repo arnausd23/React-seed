@@ -5,6 +5,7 @@ import {addPlayer} from "../store/actions/actions";
 
 import {getPlayers} from "../store/selectors/selector";
 import {PlayerComponent} from "../components";
+import React from "react";
 
 
 const mapStateToProps = state => {
@@ -21,7 +22,7 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-export const PlayerContainer = connect(
+export const PlayerContainer: React.FC<string> = connect(
     mapStateToProps,
     mapDispatchToProps
 )(PlayerComponent);

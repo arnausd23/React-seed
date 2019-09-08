@@ -8,7 +8,7 @@ export interface ILoginFormData {
     password: string;
 }
 
-export const LoginContainer = () => {
+export const LoginContainer: React.FC = () => {
     const onSignup = (inputs: ILoginFormData) => {
         AuthenticationService.login(inputs);
     };

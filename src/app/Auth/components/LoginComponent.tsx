@@ -1,8 +1,14 @@
 import React from 'react';
+import {ILoginFormData} from "../containers";
 
-export const LoginComponent = (props) => {
+interface Props {
+    inputs: ILoginFormData;
+    handleSubmit: (event: any) => void;
+    handleInputChange: (event: any) => void;
+}
+
+export const LoginComponent: React.FC<Props> = (props) => {
     const {inputs, handleInputChange, handleSubmit} = props;
-
     return (
         <form onSubmit={handleSubmit}>
             <div>

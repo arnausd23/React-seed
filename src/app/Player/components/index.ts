@@ -1,7 +1,8 @@
+import React from "react";
 import {PlayerComponent} from "./PlayerComponent";
 
 
-export const components: any[] = [
+export const components: React.FC<any>[] = [
     PlayerComponent,
 ];
 

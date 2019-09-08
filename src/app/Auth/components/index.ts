@@ -1,6 +1,7 @@
+import React from 'react';
 import {LoginComponent} from "./LoginComponent";
 
 
-export const components: any[] = [
+export const components: React.FC<any>[] = [
     LoginComponent
 ];
