@@ -51,7 +51,7 @@
     "@storybook/addons": "5.1.11",
     "@storybook/react": "5.1.11",
     "babel-loader": "8.0.6",
-    "dyson": "2.0.5",
+    "dyson": "4.1.0",
     "i18next-scanner": "2.10.2",
     "i18next-scanner-typescript": "1.0.3",
     "jest": "24.7.1",
